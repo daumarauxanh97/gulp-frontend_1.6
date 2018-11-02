@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "OpenSans-line";
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/OpenSans-Semibold.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "PTSerif-Bold";
+  src: url("../fonts/ptserif-bold.ttf");
+}
+@font-face {
+  font-family: "PTSerif-Regular";
+  src: url("../fonts/ptserif-regular.ttf");
+}
+body{
+  background: #222 no-repeat;
+  margin: 0;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+}
+@mixin size-color($size,$color,$font-family){
+  font-size: $size;
+  color: $color;
+  font-family: $font-family;
+}
+.pd-b-15{
+  padding-bottom: 15px;
+}
+.pd-b-35{
+  padding-bottom: 35px;
+}
+.wrapper{
+  width: 640px;
+  margin: 0 auto;
+}
+.header{
+  @include size-color(30px,#fff,"OpenSans-line");
+  background: url("../img/bg-top.png") no-repeat;
+  padding-top: 55px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  .b-back{
+    width: 100%;
+  }
+  .edit{
+    text-align: right;
+    overflow: hidden;
+    width: 100%;
+    letter-spacing: 1px;
+    padding-top: 8px;
+  }
+  .menu{
+    font-size: 24px;
+    li {
+      height: 60px;
+      line-height: 60px;
+      letter-spacing: 1px;
+    }
+  }
+  .user-name-pf{
+    text-align: center;
+    font-family: "OpenSans-SemiBold";
+    line-height: 75px;
+  }
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.container{
+  padding: 0 30px;
+}
+.b-e{
+  line-height: 30px;
+}
+
+.avt{
+  text-align: center;
+}
+.avt img{
+  border-radius: 100%;
+}
+
+.user-name-pf i{
+  margin-right: 5px;
+}
+
+.menu-1{
+  flex: 1;
+  padding-left: 5px;
+  margin-right: 20px;
+}
+.menu-2{
+  flex: 2;
+  border-left: 1px #887a71 solid;
+  border-right: 1px #887a71 solid;
+  text-align: center;
+  padding: 0 20px 0 15px;
+}
+.menu-3{
+  flex: 4;
+  padding-left: 30px;
+}
+.user-stt{
+  background: #fff;
+  padding: 23px 0;
+  img{
+  height: 60px;
+  line-height: 65px;
+  margin-right: 20px;
+}
+}
+.user-name-stt{
+  @include size-color(24px,#333,"OpenSans-Bold");
+  text-align: center;
+  text-transform: uppercase;
+}
+.time{
+  @include size-color(24px,#4a4a4a,"OpenSans-line");
+}.user-name-stt i{
+   margin-right: 5px;
+ }
+.img-stt{
+  position: relative;
+  img{
+  text-align: center;
+}
+}
+.cap-img{
+  @include size-color(18px,#fff,"OpenSans-Bold");
+  background: rgba(0,0,0, 0.7);
+  line-height: 55px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-transform: uppercase;
+  i{
+  margin-right: 35px;
+}
+}
+.cap{
+  padding-left: 20px;
+}
+.stt{
+  padding-bottom: 10px;
+}
+.bg-stt{
+  background: white;
+}
+.td{
+  @include size-color(36px,#262626,"PTSerif-Bold");
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 48px;
+}
+.nd{
+  @include size-color(28px,#262626,"PTSerif-Regular");
+  line-height: 36px;
+  margin-bottom: 45px;
+}
+.cmt-like-more{
+  @include size-color(24px,#333,"OpenSans-Bold");
+}
+.like-more{
+  width: 100%;
+}
+.cmt{
+  @extend .like-more;
+  padding-left: 20px;
+}
+.like , .more{
+  width: 100%;
+  text-align: center;
+}
+.like{
+  flex: 2;
+}
+.more{
+  flex: 1;
+}
+.bd{
+  border-bottom: 1px #d6d6d6 solid;
+}
